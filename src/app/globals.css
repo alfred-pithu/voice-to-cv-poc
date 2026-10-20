@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3eee6;
+  --paper-raised: #fffdf8;
+  --ink: #1c1712;
+  --ink-soft: #5f574e;
+  --line: #e4d9c8;
+  --accent: #0d5c58;
+  --accent-strong: #084440;
+  --accent-soft: #d5ebe8;
+  --danger: #8e2d2d;
+  --danger-soft: #f8e7e4;
+  --warning: #8a5a12;
+  --warning-soft: #f8efd8;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-fraunces);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-source-sans), "Source Sans 3", sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.serif {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
